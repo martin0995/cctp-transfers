@@ -1,0 +1,18 @@
+{
+  "name": "cctp-cross-chain-transfer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "circle": "npx ts-node circle-transfer.ts",
+    "transfer": "npx ts-node transfer.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@wormhole-foundation/sdk": "^0.10.4",
+    "dotenv": "^16.4.5"
+  }
+}
