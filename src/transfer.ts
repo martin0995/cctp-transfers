@@ -11,7 +11,7 @@ import {
 import evm from '@wormhole-foundation/sdk/evm';
 import solana from '@wormhole-foundation/sdk/solana';
 import * as dotenv from 'dotenv';
-import { SignerStuff, getSigner } from './helpers/helpers';
+import { SignerStuff, getSigner } from '../helpers/helpers';
 
 // Load environment variables
 dotenv.config();
@@ -122,7 +122,7 @@ async function tokenTransfer<N extends Network>(
 	console.log(' ');
 	const srcTxids = await xfer.initiateTransfer(route.source.signer);
 	console.log(`${route.source.signer.chain()} Trasaction ID: ${srcTxids[0]}`);
-	console.log(`Wormhole Trasaction ID: ${srcTxids[1]?? srcTxids[0]}`);
+	console.log(`Wormhole Trasaction ID: ${srcTxids[1] ?? srcTxids[0]}`);
 	console.log(' ');
 
 	// 2) Wait for the VAA to be signed and ready (not required for auto transfer)
