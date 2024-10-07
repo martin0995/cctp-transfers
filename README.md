@@ -36,7 +36,7 @@ cd cctp-cross-chain-transfer
 npm install
 ```
 
-## Running the Transfers
+## Running Transfers
 
 ### Manual Transfer
 
