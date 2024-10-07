@@ -11,7 +11,7 @@ import {
 import evm from '@wormhole-foundation/sdk/evm';
 import solana from '@wormhole-foundation/sdk/solana';
 import * as dotenv from 'dotenv';
-import { SignerStuff, getSigner } from '../helpers/helpers';
+import { SignerStuff, getSigner } from './helpers/helpers';
 
 // Load environment variables
 dotenv.config();
