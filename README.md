@@ -6,19 +6,6 @@ This project demonstrates how to perform cross-chain transfers using Circle's CC
  - **Automatic transfer** – fully automated transfer where steps are executed in one command
  - **Partial manual transfer** – completing a transfer from a given transaction ID (in case of an interrupted or incomplete transfer)
 
-## Repository Structure
-
-src
-  ├── helpers/
-  │     └── helpers.ts              # Helper functions for signers and environment setup
-  ├── circle-auto-transfer.ts       # Script for performing an automatic cross-chain transfer
-  ├── circle-manual-transfer.ts     # Script for performing a manual cross-chain transfer
-  ├── partial-manual-transfer.ts    # Script for resuming a transfer from a txid
-  └── transfer.ts                   # (Optional) Main transfer logic file
-.env                                # Environment file containing private keys
-package.json                        # Project dependencies and scripts
-tsconfig.json                       # TypeScript configuration
-
 ## Prerequisites
 
 Before you begin, ensure you have the following:
